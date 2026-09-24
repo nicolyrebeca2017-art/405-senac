@@ -115,7 +115,7 @@ function finalizarCompra() {
     }
 
     alert(
-        "Pedido realizado com sucesso! Obrigado por comprar na RAW OVERSIZED."
+        "Pedido realizado com sucesso! Obrigado por comprar na NICKOVERSIZED."
     );
 
     limparCarrinho();
