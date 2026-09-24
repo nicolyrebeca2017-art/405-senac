@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICKOVERSIZED — Streetwear</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-light">
+
+
+<nav class="navbar navbar-dark bg-black border-bottom border-dark-custom py-3 sticky-top">
+    <div class="container">
+        
+        <a class="navbar-brand fw-bold fs-3 text-uppercase logo-brand" href="#">
+            NICK<span class="text-magenta"></span>OVERSIZED
+        </a>
+        
+        
+        <button class="btn btn-magenta fw-bold position-relative d-flex align-items-center gap-2 btn-animado" data-bs-toggle="modal" data-bs-target="#modalCarrinho">
+            <i class="bi bi-bag-fill"></i>
+            <span>Carrinho</span>
+            <span id="qtd-carrinho" class="badge bg-black text-magenta rounded-circle ms-1">0</span>
+        </button>
+    </div>
+</nav>
+
+
+<header class="hero-banner text-center py-5">
+    <div class="container py-4">
+        <span class="badge badge-magenta text-uppercase mb-3 px-3 py-2">Coleção 2026</span>
+        <h1 class="display-3 fw-bold text-uppercase mb-3">Estilo & Modelagem Ampla</h1>
+        <p class="text-secondary fs-5 col-md-8 mx-auto mb-4">
+            Peças oversized com corte leve, caimento perfeito e algodão de alta gramatura.
+        </p>
+        <a href="#catalogo" class="btn btn-magenta btn-lg fw-bold btn-animado text-uppercase px-4">Ver Catálogo</a>
+    </div>
+</header>
+
+
+<section class="py-5 bg-card border-top border-bottom border-dark-custom">
+    <div class="container">
+        <h2 class="text-center text-uppercase fw-bold mb-4 fs-3">Como Funciona?</h2>
+        <div class="row g-4 text-center">
+            
+            <div class="col-12 col-md-4">
+                <div class="step-card p-4 rounded h-100">
+                    <div class="icon-box text-magenta mb-3 fs-1">
+                        <i class="bi bi-bag-plus"></i>
+                    </div>
+                    <h5 class="fw-bold">1. Escolha as Peças</h5>
+                    <p class="text-secondary small mb-0">Navegue pelo catálogo e escolha seus modelos oversized preferidos.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="step-card p-4 rounded h-100">
+                    <div class="icon-box text-magenta mb-3 fs-1">
+                        <i class="bi bi-credit-card"></i>
+                    </div>
+                    <h5 class="fw-bold">2. Finalize o Pedido</h5>
+                    <p class="text-secondary small mb-0">Adicione ao carrinho e confirme seu pedido de forma rápida e segura.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="step-card p-4 rounded h-100">
+                    <div class="icon-box text-magenta mb-3 fs-1">
+                        <i class="bi bi-truck"></i>
+                    </div>
+                    <h5 class="fw-bold">3. Receba em Casa</h5>
+                    <p class="text-secondary small mb-0">Enviamos para todo o Brasil com embalagem personalizada e rastreio.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<main id="catalogo" class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold text-uppercase fs-3 border-magenta-left ps-3">Lançamentos</h2>
+        <span class="text-secondary small">5 itens disponíveis</span>
+    </div>
+
+    <div class="row g-4">
+
+        
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-produto h-100 bg-card text-light border-dark-custom">
+                <div class="img-container">
+                    <img src="https://acdn-us.mitiendanube.com/stores/001/539/716/products/parolli-250250489editcapa-8774652a9a6771607717508767797803-1024-1024.webp" class="card-img-top" alt="Oversized Brown">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Camiseta Brown-off</h5>
+                    <p class="card-text text-secondary small mb-3">100% Algodão Heavyweight 220g.</p>
+                    <div class="mt-auto d-flex justify-content-between align-items-center mb-3">
+                        <span class="fs-4 fw-bold text-magenta">R$ 159,90</span>
+                        <span class="badge bg-dark text-secondary border border-secondary">Oversized</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-outline-magenta fw-bold flex-grow-1 btn-animado" onclick="adicionarAoCarrinho('Camiseta Brown-off', 159.90, 'https:https://acdn-us.mitiendanube.com/stores/001/539/716/products/parolli-250250489editcapa-8774652a9a6771607717508767797803-1024-1024.webp')">
+                            <i class="bi bi-cart-plus"></i> Carrinho
+                        </button>
+                        <button class="btn btn-magenta fw-bold flex-grow-1 btn-animado" onclick="comprarAgora('Camiseta Brown-off', 159.90, 'https:https://acdn-us.mitiendanube.com/stores/001/539/716/products/parolli-250250489editcapa-8774652a9a6771607717508767797803-1024-1024.webp')">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-produto h-100 bg-card text-light border-dark-custom">
+                <div class="img-container">
+                    <img src="https://images.openai.com/static-rsc-4/9hyWE_0_B-lvwZEhaZcnTZaehgUL0I4PTauhrgY_6tnTv9iCLWNviL6Q9G_Cv8Ip879NDPkN86BfEtZXRaLrujviZ8PIUllKFdHzrLgMQhDgqUEHgCQtxwNNCdwM9Wg2VvB61AF7-xnbNV9k-nfMoecMBOEcJgvnI0AzvvXBAjxHFfIMVq876nPJ9ZKQqrJq?purpose=fullsize" class="card-img-top" alt="Camiseta White-off">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Camiseta White-off</h5>
+                    <p class="card-text text-secondary small mb-3">De caimento ideal no corpo.</p>
+                    <div class="mt-auto d-flex justify-content-between align-items-center mb-3">
+                        <span class="fs-4 fw-bold text-magenta">R$ 299,90</span>
+                        <span class="badge bg-dark text-secondary border border-secondary">Inverno</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-outline-magenta fw-bold flex-grow-1 btn-animado" onclick="adicionarAoCarrinho('Hoodie Oversized Grey', 299.90, 'https://images.openai.com/static-rsc-4/9hyWE_0_B-lvwZEhaZcnTZaehgUL0I4PTauhrgY_6tnTv9iCLWNviL6Q9G_Cv8Ip879NDPkN86BfEtZXRaLrujviZ8PIUllKFdHzrLgMQhDgqUEHgCQtxwNNCdwM9Wg2VvB61AF7-xnbNV9k-nfMoecMBOEcJgvnI0AzvvXBAjxHFfIMVq876nPJ9ZKQqrJq?purpose=fullsize')">
+                            <i class="bi bi-cart-plus"></i> Carrinho
+                        </button>
+                        <button class="btn btn-magenta fw-bold flex-grow-1 btn-animado" onclick="comprarAgora('Hoodie Oversized Grey', 299.90, 'https://images.openai.com/static-rsc-4/9hyWE_0_B-lvwZEhaZcnTZaehgUL0I4PTauhrgY_6tnTv9iCLWNviL6Q9G_Cv8Ip879NDPkN86BfEtZXRaLrujviZ8PIUllKFdHzrLgMQhDgqUEHgCQtxwNNCdwM9Wg2VvB61AF7-xnbNV9k-nfMoecMBOEcJgvnI0AzvvXBAjxHFfIMVq876nPJ9ZKQqrJq?purpose=fullsize')">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-produto h-100 bg-card text-light border-dark-custom">
+                <div class="img-container">
+                    <img src="https://images.openai.com/static-rsc-4/kE1IMRKoIlXKqpGslvDpXStCFSxHuFCZFPVL-UrV76y1jpSDRccB8nvuwRKOPj0GPsY4VIbp2dRNuuHyByGaEepYff8jGG7vJnaHyrR5ojmBO7GKSvIZpl8BC8ahUnhHuySeVJC-mhdQff6RHyqCzkSN3phQ8UWTsy6I_3npBvKTYLT3YISEiYH7ywxue2Gw?purpose=fullsize" class="card-img-top" alt="Camiseta Off-White">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Camiseta Acid Off-White</h5>
+                    <p class="card-text text-secondary small mb-3">Lavagem estonada com acabamento premium.</p>
+                    <div class="mt-auto d-flex justify-content-between align-items-center mb-3">
+                        <span class="fs-4 fw-bold text-magenta">R$ 169,90</span>
+                        <span class="badge bg-dark text-secondary border border-secondary">Estonada</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-outline-magenta fw-bold flex-grow-1 btn-animado" onclick="adicionarAoCarrinho('Camiseta Acid Off-White', 169.90, 'https://images.openai.com/static-rsc-4/kE1IMRKoIlXKqpGslvDpXStCFSxHuFCZFPVL-UrV76y1jpSDRccB8nvuwRKOPj0GPsY4VIbp2dRNuuHyByGaEepYff8jGG7vJnaHyrR5ojmBO7GKSvIZpl8BC8ahUnhHuySeVJC-mhdQff6RHyqCzkSN3phQ8UWTsy6I_3npBvKTYLT3YISEiYH7ywxue2Gw?purpose=fullsize')">
+                            <i class="bi bi-cart-plus"></i> Carrinho
+                        </button>
+                        <button class="btn btn-magenta fw-bold flex-grow-1 btn-animado" onclick="comprarAgora('Camiseta Acid Off-White', 169.90, 'https://images.openai.com/static-rsc-4/kE1IMRKoIlXKqpGslvDpXStCFSxHuFCZFPVL-UrV76y1jpSDRccB8nvuwRKOPj0GPsY4VIbp2dRNuuHyByGaEepYff8jGG7vJnaHyrR5ojmBO7GKSvIZpl8BC8ahUnhHuySeVJC-mhdQff6RHyqCzkSN3phQ8UWTsy6I_3npBvKTYLT3YISEiYH7ywxue2Gw?purpose=fullsize')">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-produto h-100 bg-card text-light border-dark-custom">
+                <div class="img-container">
+                    <img src="https://images.openai.com/static-rsc-4/sQXPM94jMXlcZIbq4As8lwXHCmI3mc2QqF20L6lKyILob4Rw5g6OaW7biERWX2OCDZBgS7ycpcc9OzNqbKHk5cnHKFNWlOPVavAEhtkfGr2yhzAsxlhn3kS2kE9p6lrzAEpgQwKBn7PVhHMnM8mjGHwRZGsUeV6q2__oOsQfJPAJ5X8qkqlwGoY3STCQXHKg?purpose=fullsize" class="card-img-top" alt="Moletom Crewneck">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Moletom Crewneck Gray</h5>
+                    <p class="card-text text-secondary small mb-3">Gola careca reforçada e barra ajustada.</p>
+                    <div class="mt-auto d-flex justify-content-between align-items-center mb-3">
+                        <span class="fs-4 fw-bold text-magenta">R$ 249,90</span>
+                        <span class="badge bg-dark text-secondary border border-secondary">Crewneck</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-outline-magenta fw-bold flex-grow-1 btn-animado" onclick="adicionarAoCarrinho('Moletom Crewneck Dark', 249.90, 'https://images.openai.com/static-rsc-4/sQXPM94jMXlcZIbq4As8lwXHCmI3mc2QqF20L6lKyILob4Rw5g6OaW7biERWX2OCDZBgS7ycpcc9OzNqbKHk5cnHKFNWlOPVavAEhtkfGr2yhzAsxlhn3kS2kE9p6lrzAEpgQwKBn7PVhHMnM8mjGHwRZGsUeV6q2__oOsQfJPAJ5X8qkqlwGoY3STCQXHKg?purpose=fullsize')">
+                            <i class="bi bi-cart-plus"></i> Carrinho
+                        </button>
+                        <button class="btn btn-magenta fw-bold flex-grow-1 btn-animado" onclick="comprarAgora('Moletom Crewneck Dark', 249.90, 'https://images.openai.com/static-rsc-4/sQXPM94jMXlcZIbq4As8lwXHCmI3mc2QqF20L6lKyILob4Rw5g6OaW7biERWX2OCDZBgS7ycpcc9OzNqbKHk5cnHKFNWlOPVavAEhtkfGr2yhzAsxlhn3kS2kE9p6lrzAEpgQwKBn7PVhHMnM8mjGHwRZGsUeV6q2__oOsQfJPAJ5X8qkqlwGoY3STCQXHKg?purpose=fullsize')">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-produto h-100 bg-card text-light border-dark-custom">
+                <div class="img-container">
+                    <img src="https://www.oneractive.com/cdn/shop/files/241122_ICONS_CLASSIC_OVERSIZED_LIGHTWEIGHT_T-SHIRT_WISTERIAPURPLE_PDP_1440x1800_01.jpg?v=1734622038" class="card-img-top" alt="Camiseta Brown">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Camiseta Purple-off</h5>
+                    <p class="card-text text-secondary small mb-3">Tom pastel exclusivo com manga alongada.</p>
+                    <div class="mt-auto d-flex justify-content-between align-items-center mb-3">
+                        <span class="fs-4 fw-bold text-magenta">R$ 149,90</span>
+                        <span class="badge bg-dark text-secondary border border-secondary">Básica</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-outline-magenta fw-bold flex-grow-1 btn-animado" onclick="adicionarAoCarrinho('Camiseta Street Brown', 149.90, 'https://www.oneractive.com/cdn/shop/files/241122_ICONS_CLASSIC_OVERSIZED_LIGHTWEIGHT_T-SHIRT_WISTERIAPURPLE_PDP_1440x1800_01.jpg?v=1734622038')">
+                            <i class="bi bi-cart-plus"></i> Carrinho
+                        </button>
+                        <button class="btn btn-magenta fw-bold flex-grow-1 btn-animado" onclick="comprarAgora('https://www.oneractive.com/cdn/shop/files/241122_ICONS_CLASSIC_OVERSIZED_LIGHTWEIGHT_T-SHIRT_WISTERIAPURPLE_PDP_1440x1800_01.jpg?v=1734622038')">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+
+<div class="modal fade" id="modalCarrinho" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-card text-white border-dark-custom">
+            <div class="modal-header border-dark-custom">
+                <h5 class="modal-title fw-bold text-magenta d-flex align-items-center gap-2">
+                    <i class="bi bi-bag-check-fill"></i> Seu Carrinho
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body p-3">
+                
+                <div id="lista-carrinho" class="d-flex flex-column gap-3 mb-3">
+                    <p class="text-center text-secondary py-4 mb-0">Seu carrinho está vazio.</p>
+                </div>
+
+                <hr class="border-dark-custom">
+
+                
+                <div class="d-flex justify-content-between align-items-center fs-5 fw-bold">
+                    <span>Total:</span>
+                    <span id="total-carrinho" class="text-magenta">R$ 0,00</span>
+                </div>
+            </div>
+            <div class="modal-footer border-dark-custom">
+                <button class="btn btn-outline-secondary btn-sm btn-animado" onclick="limparCarrinho()">Esvaziar</button>
+                <button class="btn btn-magenta fw-bold btn-animado" onclick="finalizarCompra()">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="bg-black text-center text-secondary py-4 border-top border-dark-custom mt-5">
+    <div class="container">
+        <p class="mb-0 small">&copy; 2026 NICKOVERSIZED. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="main.js"></script>
+</body>
+</html>
