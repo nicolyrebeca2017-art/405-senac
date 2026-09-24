@@ -1,0 +1,240 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #ffffff;
+}
+
+
+/* =========================
+   CORES
+========================= */
+
+.text-teal {
+    color: #ff1493 !important;
+}
+
+.bg-black-custom {
+    background-color: #0b0b0b !important;
+}
+
+.bg-card {
+    background-color: #161616 !important;
+}
+
+.border-dark-custom {
+    border-color: #2b2b2b !important;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background-color: #050505 !important;
+}
+
+.logo-brand {
+    color: #ffffff !important;
+    letter-spacing: 1px;
+}
+
+.logo-brand:hover {
+    color: #ff1493 !important;
+}
+
+
+/* Botão do carrinho */
+
+.btn-teal {
+    background-color: #ff1493 !important;
+    border-color: #ff1493 !important;
+    color: #ffffff !important;
+}
+
+.btn-teal:hover {
+    background-color: #d80b78 !important;
+    border-color: #d80b78 !important;
+}
+
+
+/* Número do carrinho */
+
+#qtd-carrinho {
+    background-color: #111111 !important;
+    color: #ff1493 !important;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero-banner {
+    background-color: #0b0b0b;
+    border-bottom: 1px solid #2b2b2b;
+}
+
+.hero-banner h1 {
+    color: #ffffff;
+}
+
+.hero-banner p {
+    color: #999999 !important;
+}
+
+.badge-teal {
+    background-color: #ff1493 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================
+   TÍTULO LANÇAMENTOS
+========================= */
+
+.border-teal-left {
+    border-left: 4px solid #ff1493 !important;
+}
+
+main h2 {
+    color: #ffffff;
+}
+
+
+/* =========================
+   CARDS DOS PRODUTOS
+========================= */
+
+.card-produto {
+    background-color: #161616 !important;
+    border: 1px solid #292929 !important;
+    color: #ffffff !important;
+
+    /* Corrige o espaço exagerado */
+    height: auto !important;
+
+    transition: 0.2s ease;
+}
+
+
+/* Efeito simples ao passar o mouse */
+
+.card-produto:hover {
+    border-color: #ff1493 !important;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   IMAGENS DOS PRODUTOS
+========================= */
+
+.img-container {
+    height: 350px;
+    overflow: hidden;
+    background-color: #111111;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: 0.3s ease;
+}
+
+.card-produto:hover .img-container img {
+    transform: scale(1.02);
+}
+
+
+/* =========================
+   TEXTO DOS CARDS
+========================= */
+
+.card-produto .card-body {
+    background-color: #161616 !important;
+}
+
+.card-produto .card-title {
+    color: #ffffff !important;
+}
+
+.card-produto .card-text {
+    color: #999999 !important;
+}
+
+
+/* Preço */
+
+.card-produto .text-teal {
+    color: #ff1493 !important;
+}
+
+
+/* Categoria */
+
+.card-produto .badge {
+    background-color: #222222 !important;
+    color: #aaaaaa !important;
+    border-color: #444444 !important;
+}
+
+
+/* =========================
+   MODAL DO CARRINHO
+========================= */
+
+.modal-content {
+    background-color: #161616 !important;
+    color: #ffffff !important;
+    border: 1px solid #292929;
+}
+
+.modal-header,
+.modal-footer {
+    border-color: #292929 !important;
+}
+
+.modal-body {
+    color: #ffffff;
+}
+
+.modal-title {
+    color: #ff1493 !important;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #050505 !important;
+    border-top: 1px solid #292929 !important;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .img-container {
+        height: 300px;
+    }
+
+}
